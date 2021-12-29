@@ -1,0 +1,13 @@
+p.parrafo{
+    font-weight: bold;   
+    color: yellow; 
+}
+a span {
+
+}
+h1, ol:not(.azul ){
+    color:brown;
+}
+.azul {
+    color: blue;
+}
