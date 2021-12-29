@@ -1,0 +1,23 @@
+h1 , p {
+    color : royalblue;
+    font-weight: bold;
+    /* text-decoration: underline; */
+}
+ul li {
+    color: slateblue;
+}
+ul li a {
+    color: tomato;
+}
+a:hover {
+    color: yellow;
+}
+ul li a:hover {
+    color:violet;
+}
+p:first-of-type {
+    color: yellowgreen;
+}
+a:not(.destacado){
+    font-size: 40px;
+}
