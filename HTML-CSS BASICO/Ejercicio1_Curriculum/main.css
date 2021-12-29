@@ -1,0 +1,22 @@
+.contenedorPrincipal {
+    width: 1338px; 
+    min-height: 500px; 
+    background:salmon;
+    margin: auto; 
+}
+.contenedorImg {
+    min-width: 50px;
+    min-height: 50px;
+    background: gainsboro;
+    float: right;
+    border: 1px;
+    margin: 10px;
+}
+label, input {
+    display: block;
+}
+h1,h2,p, label, input, textarea {
+    margin: 5px;
+    font-family: sans-serif;
+}
+
