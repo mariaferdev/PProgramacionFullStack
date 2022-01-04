@@ -1,0 +1,13 @@
+body {
+    font-family:  mpact, Helvetica, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1 {
+    font-size: 100px;
+}
+p {
+    font-size: 22px;
+    font-weight:bold;
+    font-style:italic;
+    text-transform: uppercase;
+    line-height: 40px;
+}
