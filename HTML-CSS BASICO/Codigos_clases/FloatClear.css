@@ -1,0 +1,37 @@
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    *zoom:1;
+}
+#contenedorPadre {
+    width: 400px;
+    min-height: 100px;
+    background-color: cornflowerblue;
+    /* overflow:hidden; Puede ser la opción más limpia */
+}
+.float1 {
+    width: 300px;
+    min-height: 300px;
+    background-color:crimson;
+    float: left;
+}
+.float2 {
+    width: 100px;
+    min-height: 300px;
+    background-color: rgb(127, 237, 100);
+    float: right;
+}
+/* .clear {
+    width: 100px;
+    min-height: 100px;
+    background-color: rgb(237, 100, 164); 
+    clear: both;
+} */

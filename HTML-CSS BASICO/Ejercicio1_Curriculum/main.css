@@ -5,9 +5,9 @@
     margin: auto; 
 }
 .contenedorImg {
-    min-width: 50px;
-    min-height: 50px;
-    background: gainsboro;
+    width: 200px;
+    height: 200px;
+    background: rgb(220, 220, 220);
     float: right;
     border: 1px;
     margin: 10px;

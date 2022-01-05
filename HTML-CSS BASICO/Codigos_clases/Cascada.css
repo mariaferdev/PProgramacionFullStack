@@ -1,0 +1,27 @@
+/* h3 {
+    font-size: 40px;
+}
+.rojo {
+    color: red;
+}
+#cabecera {
+    position: fixed;
+    background: greenyellow;
+}
+h5#indice {
+
+}
+p.parrafo{
+
+} */
+/* Nivel1: enlace externo */
+/* Nivel4: !importan */
+h1 {
+    color: hotpink !important;
+}
+
+/* Los selectores se combinan */
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+}

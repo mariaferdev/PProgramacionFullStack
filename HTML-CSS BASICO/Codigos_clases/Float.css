@@ -1,0 +1,21 @@
+div {
+    background-color: cadetblue;
+    padding: 5px;
+    overflow: auto;
+}
+img {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.avatar {
+    float: left;
+    width: 30%;
+    border: 1px solid rebeccapurple;
+}
+.contenido {
+    float: right;
+    width: 62%;
+    border: 1px solid brown;
+    background-color: thistle;
+}
