@@ -1,0 +1,20 @@
+/* .contenedorImg {
+    width: 200px;
+    height: 200px;
+    background-color: darkgray;
+    overflow: hidden;
+}
+.contenedorImg img {
+    height: 100%;
+    min-width: 100%;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+} */
+.contenedorImg2 {
+    background-image: url(http://i0.wp.com/www.rincondelafe.com/wp-content/uploads/2015/09/Frases-cristianas-de-amor-para-mi-novio2.jpg?resize=496,496);
+    width: 500px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}

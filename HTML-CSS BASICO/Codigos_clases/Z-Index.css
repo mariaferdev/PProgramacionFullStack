@@ -1,0 +1,17 @@
+.capa1 {
+    width: 200px;
+    height: 150px;
+    background-color: cornflowerblue;
+    position: relative;
+    /* top: 50px; */
+    z-index: 990;
+}
+.capa2 {
+    width: 200px;
+    height: 150px;
+    background-color:crimson;
+    position: relative;
+    top: -50px;
+    right: -100px;
+    z-index: 999;
+}

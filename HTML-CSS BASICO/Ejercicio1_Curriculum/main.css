@@ -12,6 +12,13 @@
     border: 1px;
     margin: 10px;
 }
+.contenedorImg img {
+    height: 100%;
+    min-width: 100%;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
 label, input {
     display: block;
 }

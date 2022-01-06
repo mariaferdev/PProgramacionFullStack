@@ -1,0 +1,15 @@
+.carrusel {
+    height: 200px;
+    background-color: crimson;
+    margin-bottom: 20px;
+}
+.noticias {
+    height: 150px;
+    background-color: rgb(20, 220, 220);
+    margin-bottom: 20px;
+}
+.front-twiter {
+    height: 100px;
+    background-color: rgb(110, 220, 20);
+    margin-bottom: 20px;
+}
