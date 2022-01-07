@@ -1,0 +1,16 @@
+/* #fondo {
+    width: 400px;
+    height: 400px;
+    background-image: url(https://placeimg.com/500/500/nature);
+    text-indent: 100px;
+}
+#fondo div {
+    color: crimson;
+} */
+#sprite {
+    background-image: url(https://www.didactoons.com/wp-content/uploads/2021/02/72dcf240f3daf39c28cee25ec2ae9ec7.png);
+    width: 25px;
+    height: 40px;
+    border: 1px solid red;
+    background-position: 0 1px;
+}

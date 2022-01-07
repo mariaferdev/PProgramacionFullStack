@@ -1,0 +1,29 @@
+/* Pseudo clases de estado */
+/* a:hover {
+    color: red; 
+}
+a:active {
+    color: seagreen;
+}
+a:visited {
+    color: sienna;
+} 
+input:focus {
+    background-color: rgb(135, 147, 184);
+    padding: 20px;
+} */
+
+
+/* Pseudo clases de posición */
+div :first-of-type {
+    color: skyblue;
+}
+div :first-child{
+    color: slateblue;
+}
+div span:only-child {
+    color: springgreen;
+}
+div p:nth-child(3) {
+    color: violet;
+} 

@@ -1,0 +1,6 @@
+p:nth-child(-n + 4){
+    background-color: violet;
+}
+p:nth-last-child(-n + 4){
+    background-color: turquoise;
+}

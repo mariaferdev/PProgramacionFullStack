@@ -1,0 +1,17 @@
+p:first-line{
+    color: tomato;
+}
+p:first-letter{
+    color: turquoise;
+    font-size: 50px;
+}
+h1:after{
+    content: ' Hola ';
+    margin-right: 10px;
+    color: violet;
+}
+h1::before{
+    content: ' Hola ';
+    margin-left: 10px;
+    color: violet;
+}
