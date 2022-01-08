@@ -22,7 +22,7 @@ body {
     float: left;
     position: absolute;
     left:2%;
-    overflow: hidden;
+    overflow: auto;
 }
 .columDer {
     min-height: 550px;
@@ -41,7 +41,7 @@ body {
     background-color: white;
     margin: 10px auto;
 }
-.contenedorImgPrincipal img:first-of-type{
+.contenedorImgPrincipal img{
     height: 100%;
     min-height: 100%;
     left: 50%;
@@ -51,30 +51,82 @@ body {
 }
 .contenedorImgs {
     height: 150px;
-    width: 150px;
-    background-color: white;
-    margin: 10px auto;
+    width: 160px;
+    background-color:white;
+    margin: 0 auto;
+    overflow: hidden;
 }
 .columDer .contenedorImgs{
     height: 150px;
-    width: 150px;
+    width: 155px;
     background-color: white;
-    text-indent: 10px;
+    border: 13px;
     display: inline-block;
-    transform: translateY(102%);
-}
-div .itemRedes{
-    width: 50px;
-    min-height: 50px;
-    background-color: silver;
-    margin-bottom: 5px;
-    margin-left: 10px;
-}
-a{
-    float: right;
+    position: relative;
+    top: 105px;
 }
 .columIzq h2{
     font-size: 15px;
     margin-left: 10px;
 }
-
+#itemRedes{
+    width: 47px;
+    min-height: 47px;
+    background-color: silver;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+#itemRedes a {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    font-size:40px;
+    color: transparent;
+}
+.linkedin {
+    background-image: url(http://i.imgur.com/3708g.png );
+    width: 50px;
+    height: 50px;
+    background-position: -449px 145px;
+}
+.gitHub {
+    background-image: url(http://i.imgur.com/3708g.png );
+    width: 50px;
+    height: 50px;
+    background-position: -316px 145px;
+}
+.youTube {
+    background-image: url(http://i.imgur.com/3708g.png );
+    width: 50px;
+    height: 50px;
+    background-position: -95px 145px; 
+}
+.columIzq .contenedorImgs img {
+    height: 100%;
+    min-height: 100%;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+.columDer .contenedorImgs img:first-of-type {
+    height: 100%;
+    min-height: 100%;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+.columDer .contenedorImgs img:nth-child(2) {
+    height: 100%;
+    min-height: 100%;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+.columDer .contenedorImgs img:nth-child(3) {
+    height: 100%;
+    min-height: 100%;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
