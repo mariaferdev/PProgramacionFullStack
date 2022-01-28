@@ -20,6 +20,7 @@ body {
     display: flex;
     /* flex-direction: row; se dice que es redundante porque ese es su valor por defecto */
     flex-direction: row;
+    justify-content: center;
     height:100%;
     flex-wrap: wrap;
 }
@@ -28,32 +29,9 @@ div [class*="item-"] {
     padding: 10px;
     text-align: center;
     border: 2px solid lightgreen;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 div [class*="item-"]:nth-child(odd)  {
     background-color:plum;
     color: white;
 }
-div [class*="item-"]:nth-child(1) {
-    background-color:rgb(255, 2, 255);
-    order: -2;
-}
-@media (max-width:700px) {
-    div [class*="item-"]:nth-child(6) {
-        background-color:rgb(255, 2, 255);
-        order: 1;
-    }
-    div [class*="item-"]:nth-child(7) {
-        background-color:rgb(255, 2, 255);
-        order: 2;
-    }
-    div [class*="item-"]:nth-child(8) {
-        background-color:rgb(255, 2, 255);
-        order: 3;
-    }
-    div [class*="item-"]:nth-child(9) {
-        background-color:rgb(255, 2, 255);
-        order: 4;
-    }
-}
-/* class*="item-" significa de todos aquellos*/
