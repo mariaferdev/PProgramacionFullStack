@@ -29,7 +29,7 @@ body {
     justify-content: center;
     flex-grow: 3;
 }
-ul.contenedorMenu{
+ul#contenedorMenu{
     width: 90%;
     padding: 10px;
     border-radius: 10px;
@@ -131,7 +131,7 @@ input{
     .menu {
         flex-basis: 33%;
     }
-    ul.contenedorMenu {
+    ul#contenedorMenu  {
         flex-wrap: wrap;
         display: none;
     }
@@ -141,7 +141,7 @@ input{
     li:nth-child(5){
         flex-basis: 50%;
     }
-    .contenedorMenu {
+    #contenedorMenu {
         order: -2;
     }
     #contacto{
@@ -154,6 +154,9 @@ input{
     #movil {
         display: flex;
         order: -3;
+    }
+    #contacto{
+        margin-top: 20px;
     }
 }
 @media (max-width:375px){
