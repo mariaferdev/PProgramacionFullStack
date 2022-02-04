@@ -21,3 +21,18 @@ p:first-of-type {
 a:not(.destacado){
     font-size: 40px;
 }
+
+
+/*
+    NOTAS HAILER:
+    - Dejar una o dos lineas en blanco después de cerrar llave.
+    - No dejar espacio antes de dos puntos y dejar un espacio después 
+      de dos puntos (para cuando se hace declaraciones "clave: valor")
+    - No dejar espacio antes de las comas, y dejar un espacio después
+      de las comas (aplica para todos los lenguajes de programación)
+    - Dejar un espacio antes de la apertura de una llave.
+
+    Las anteriores recomendaciones no alteran el funcionamiento,
+    son estándares para escribir código agradable a la vista y legible.
+
+*/
