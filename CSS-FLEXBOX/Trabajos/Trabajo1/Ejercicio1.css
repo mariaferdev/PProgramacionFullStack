@@ -39,3 +39,18 @@ h1{
 p {
     padding: 10px;
 }
+
+
+/*
+    NOTAS HAILER:
+        - Siempre especificar el "flex-direction", y todas las propiedades que tengan valores por defecto, 
+          y que según la teoría no sean necesarios ponerlos. Ya que al pasar el tiempo, facilmente nos
+          podemos olvidar de esas propiedades que tienen valores por defecto, y cuál es ese valor.
+        - En Flex-Box y Grid hay propiedades que tienen nombres bien raros. Al pasar el tiempo se podría
+          olvidar cuál es su funcionalidad. Sería bueno especificar comentarios en el código explicando
+          para qué son esas propiedades. También es útil ya que uno suele reutilizar códigos.
+          Ejemplos: "box-sizing", "flex-wrap" y "flex-basis".
+        - Yo sé que el profesor programa en español, pero eso es una mala práctica. Los nombres de las 
+          variables deberían ir en inglés. Ya que la sintaxis de todos los lenguajes está en inglés,
+          y debería haber consistencia en ello.
+*/
