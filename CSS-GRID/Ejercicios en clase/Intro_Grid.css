@@ -1,0 +1,45 @@
+main > * {
+    background-color:coral;
+    padding: 10px;
+    font-size: 3em;
+}
+
+/* Definir el grid-container */
+main{
+    display: grid;
+    grid-gap: 10px;
+    /* darle disposición a las areas (una sola columna) */
+    grid-template-areas: 
+    "header"
+    "left1"
+    "content1"
+    "right1"
+    "footer";
+}
+
+/* Nombrar los elementos - darles un area */
+header{
+    grid-area: header;
+}
+aside:first-of-type{
+    grid-area: left1;
+}
+article{
+    grid-area: content1;
+}
+aside:last-of-type{
+    grid-area: right1;
+}
+footer{
+    grid-area: footer;
+}
+
+/* Disposición de las areas en varias columnas */
+@media(min-width:500px){
+    main {
+        grid-template-areas: 
+        "header header header"
+        "left1 content1 right1"
+        "footer footer .";
+    }
+}
