@@ -1,0 +1,24 @@
+main{
+    display: grid;
+    height: 100vh;
+    grid-gap: 10px;
+    grid-template-columns: 200px 300px;
+    grid-auto-flow: column;
+    /* Para el implicit grid */
+    grid-auto-columns: minmax(100px,1fr);
+}
+
+div{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+/* Marcando el explicit grid */
+div:first-of-type,
+div:nth-child(2){
+    background-color:brown;
+    color: white;
+}

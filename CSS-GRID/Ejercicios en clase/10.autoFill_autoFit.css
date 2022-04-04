@@ -1,0 +1,27 @@
+section{
+    display: grid;
+    grid-gap: 10px;
+    font-family: sans-serif;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 20px;
+    background-color: bisque;
+}
+.auto-fill div{
+    background-color: aquamarine;
+}
+.auto-fit div{
+    background-color: blueviolet;
+}
+.auto-fill{
+    grid-template-columns: 
+        repeat(auto-fill,minmax(100px,1fr));
+}
+.auto-fit{
+    grid-template-columns: 
+        repeat(auto-fit,minmax(100px,1fr));
+}

@@ -1,0 +1,15 @@
+main {
+    height: 100vh;
+    display: grid; 
+    grid-gap: 10px;
+
+    grid-template-columns: 
+        repeat(8,minmax(min-content,max-content));
+}
+main > * {
+    font-family: sans-serif;
+    background-color:bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
