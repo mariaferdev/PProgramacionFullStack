@@ -1,0 +1,55 @@
+main{
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    font-family: sans-serif;
+    /* grid-template-areas: 
+        "header header header"
+        "derecha1 contenido izquierda"
+        "derecha1 contenido derecha2"
+        "derecha1 footer footer";
+    grid-template-rows: 
+        [inicio] 1fr
+        [contenido-start] 2fr
+        [derecha2-start derecha2-end] 1fr
+        [footer-start footer-end] 1fr
+        [fin]
+        ;
+    grid-template-columns: 
+        [inicio] 1fr [contenido-start] 2fr 1fr [fin]; */
+    grid-template: 
+        /* filas */ 
+        [inicio] "header header header" 1fr
+        [contenido-start] "derecha1 contenido izquierda" 2fr
+        [derecha2-start derecha2-end] "derecha1 contenido derecha2" 1fr
+        [footer-start footer-end] "derecha1 footer footer" 1fr
+        /
+        [inicio] 1fr [contenido-start] 2fr 1fr [fin]
+        ;
+    }
+
+main > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+}
+
+header {
+    grid-area: header;
+}
+aside:first-of-type{
+    grid-area: izquierda;
+}
+article{
+    grid-area: contenido;
+}
+aside:nth-child(2){
+    grid-area: derecha1;
+}
+aside:last-of-type{
+    grid-area: derecha2;
+}
+footer{
+    grid-area: footer;
+}

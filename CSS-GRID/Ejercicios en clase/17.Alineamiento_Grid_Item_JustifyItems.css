@@ -1,0 +1,23 @@
+main{
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    font-family: sans-serif;
+    grid-template: 
+        repeat(4,50px)/repeat(3,1fr);
+    justify-items:stretch;
+    align-items: center;
+}
+
+main > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:darkcyan;
+}
+
+div:nth-child(5){
+    background-color:crimson;
+    justify-self: start;
+    align-self: center;
+}

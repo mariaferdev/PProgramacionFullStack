@@ -1,0 +1,16 @@
+main{
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    font-family: sans-serif;
+    grid: 
+        10fr 5fr / auto-flow  3fr 8fr
+    ;
+    }
+
+main > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+}
