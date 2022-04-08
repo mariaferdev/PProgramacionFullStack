@@ -1,3 +1,6 @@
+html * {
+    box-sizing: border-box;
+}
 main{
     height: 100vh;
     display: grid;
@@ -7,7 +10,9 @@ main > * {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
+
 header{
     grid-area: header;
     background-color: cornflowerblue;
@@ -20,6 +25,10 @@ article:first-of-type{
     grid-area: imgTitulo;
     background-color: ghostwhite;
     flex-direction: column;
+}
+article:first-of-type img {
+    width: 100%;
+    height: auto;
 }
 article:nth-last-of-type(2){
     grid-area: contenido1;
@@ -38,12 +47,14 @@ footer{
     grid-area: footer;
     background-color: darkblue;
 }
+
 h1{
     text-align: center;
 }
 h1,p,img {
     margin:15px 10px;
 }
+
 @media(min-width: 300px){
     main{
         grid-template-areas: 
