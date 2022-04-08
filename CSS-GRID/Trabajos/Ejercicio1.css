@@ -14,7 +14,7 @@ header{
 }
 aside:first-of-type{
     grid-area: lateral1;
-    background-color: darkcyan;
+    background-color:cyan;
 }
 article:first-of-type{
     grid-area: imgTitulo;
@@ -32,6 +32,7 @@ article:last-of-type{
 aside:last-of-type{
     grid-area: lateral2;
     background-color: darkcyan;
+    align-content: center;
 }
 footer{
     grid-area: footer;
@@ -43,7 +44,7 @@ h1{
 h1,p,img {
     margin:15px 10px;
 }
-@media(max-width: 300px){
+@media(min-width: 300px){
     main{
         grid-template-areas: 
         "header"
@@ -65,29 +66,17 @@ h1,p,img {
         ;
     }
 }
-@media(max-width: 600px){
+@media(min-width: 600px){
     main{
-        grid-template-areas: 
-        "header header header"
-        "lateral1 imgTitulo imgTitulo"
-        "lateral2 contenido1 contenido2"
-        "footer";
-    grid-template-rows: 
-        [inicio] 1fr
-        [lateral1-start] 1fr
-        [literal1-end imgTitulo-start] 3fr
-        [imgTitulo-end contenido1-start] 2fr
-        [contenido1-end contenido2-start] 2fr
-        [lateral2-start] 1fr
-        [footer-start] 1fr
-        [fin]
-        ;
-    grid-template-columns:
-        [literal1-statr] 1fr
-        [lateral1-end contenido1-start] 2fr
-        [contenido1-end contenido2-start] 2fr
-        [fin]
+        grid-template: 
+        /* Filas */
+            [inicio] "header header header" 1fr
+            [lateral1-start lateral1-end] "literal1 imgTitulo imgTitulo" 4fr
+            [imgTitulo-end literal2-end] "literal2 contenido1 contenido2" 2fr
+            [footer-start footer-end] "footer footer footer" 1fr
+            /
+        /* Columnas */
+            [inicio lateral1-end] 1fr [contenido1-start contenido1-end]  2fr [contenido2-start contenido2-end] 2fr
         ;
     }
-    
 }
