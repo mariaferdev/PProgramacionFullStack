@@ -4,6 +4,25 @@ html * {
 main{
     height: 100vh;
     display: grid;
+
+    grid-template-areas: 
+        "header"
+        "lateral1"
+        "imgTitulo"
+        "contenido1"
+        "contenido2"
+        "lateral2"
+        "footer";
+    grid-template-rows: 
+        [inicio] 1fr
+        [lateral1-start] 1fr
+        [literal1-end imgTitulo-start] 3fr
+        [imgTitulo-end contenido1-start] 2fr
+        [contenido1-end contenido2-start] 2fr
+        [lateral2-start] 1fr
+        [footer-start] 1fr
+        [fin]
+        ;
 }
 main > * {
     font-family: sans-serif;
@@ -55,39 +74,25 @@ h1,p,img {
     margin:15px 10px;
 }
 
-@media(min-width: 300px){
-    main{
-        grid-template-areas: 
-        "header"
-        "lateral1"
-        "imgTitulo"
-        "contenido1"
-        "contenido2"
-        "lateral2"
-        "footer";
-    grid-template-rows: 
-        [inicio] 1fr
-        [lateral1-start] 1fr
-        [literal1-end imgTitulo-start] 3fr
-        [imgTitulo-end contenido1-start] 2fr
-        [contenido1-end contenido2-start] 2fr
-        [lateral2-start] 1fr
-        [footer-start] 1fr
-        [fin]
-        ;
-    }
-}
 @media(min-width: 600px){
     main{
-        grid-template: 
-        /* Filas */
+        /* grid-template: 
+        
             [inicio] "header header header" 1fr
             [lateral1-start lateral1-end] "literal1 imgTitulo imgTitulo" 4fr
             [imgTitulo-end literal2-end] "literal2 contenido1 contenido2" 2fr
             [footer-start footer-end] "footer footer footer" 1fr
             /
-        /* Columnas */
+        
             [inicio lateral1-end] 1fr [contenido1-start contenido1-end]  2fr [contenido2-start contenido2-end] 2fr
-        ;
+        ; */
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows: 1fr 3fr 2fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "lateral1 imgTitulo imgTitulo"
+        "lateral2 contenido1 contenido2"
+        "footer footer footer";
+
     }
 }
