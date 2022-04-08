@@ -37,6 +37,7 @@ main > * {
 
 header {
     grid-area: header;
+    background-color: cornflowerblue;
 }
 aside:first-of-type{
     grid-area: izquierda;

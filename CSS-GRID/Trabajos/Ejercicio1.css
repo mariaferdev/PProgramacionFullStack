@@ -1,0 +1,93 @@
+main{
+    height: 100vh;
+    display: grid;
+}
+main > * {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    grid-area: header;
+    background-color: cornflowerblue;
+}
+aside:first-of-type{
+    grid-area: lateral1;
+    background-color: darkcyan;
+}
+article:first-of-type{
+    grid-area: imgTitulo;
+    background-color: ghostwhite;
+    flex-direction: column;
+}
+article:nth-last-of-type(2){
+    grid-area: contenido1;
+    background-color: darksalmon;
+}
+article:last-of-type{
+    grid-area: contenido2;
+    background-color: deepskyblue;
+}
+aside:last-of-type{
+    grid-area: lateral2;
+    background-color: darkcyan;
+}
+footer{
+    grid-area: footer;
+    background-color: darkblue;
+}
+h1{
+    text-align: center;
+}
+h1,p,img {
+    margin:15px 10px;
+}
+@media(max-width: 300px){
+    main{
+        grid-template-areas: 
+        "header"
+        "lateral1"
+        "imgTitulo"
+        "contenido1"
+        "contenido2"
+        "lateral2"
+        "footer";
+    grid-template-rows: 
+        [inicio] 1fr
+        [lateral1-start] 1fr
+        [literal1-end imgTitulo-start] 3fr
+        [imgTitulo-end contenido1-start] 2fr
+        [contenido1-end contenido2-start] 2fr
+        [lateral2-start] 1fr
+        [footer-start] 1fr
+        [fin]
+        ;
+    }
+}
+@media(max-width: 600px){
+    main{
+        grid-template-areas: 
+        "header header header"
+        "lateral1 imgTitulo imgTitulo"
+        "lateral2 contenido1 contenido2"
+        "footer";
+    grid-template-rows: 
+        [inicio] 1fr
+        [lateral1-start] 1fr
+        [literal1-end imgTitulo-start] 3fr
+        [imgTitulo-end contenido1-start] 2fr
+        [contenido1-end contenido2-start] 2fr
+        [lateral2-start] 1fr
+        [footer-start] 1fr
+        [fin]
+        ;
+    grid-template-columns:
+        [literal1-statr] 1fr
+        [lateral1-end contenido1-start] 2fr
+        [contenido1-end contenido2-start] 2fr
+        [fin]
+        ;
+    }
+    
+}
