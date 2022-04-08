@@ -96,3 +96,15 @@ h1,p,img {
 
     }
 }
+
+@media(min-width: 900px){
+    main{
+        grid-template-columns: 1fr 3fr 3fr 1fr;
+        grid-template-rows: 1fr 3fr 2fr 1fr;
+        grid-template-areas: 
+        "header header header header"
+        "lateral1 imgTitulo imgTitulo lateral2"
+        "lateral1 contenido1 contenido2 lateral2"
+        "footer footer footer footer";
+    }
+}
