@@ -1,0 +1,12 @@
+var dias = ["lunes", "martes", "miercoles"];
+console.log("matriz inicial: " + dias);
+dias.shift();
+console.log("Elimené el 1re elemento: " + dias);
+dias.pop();
+console.log("Eliminé el último elemnto: " + dias);
+dias.push("jueves");
+console.log("Añadí al final un elemento: " + dias);
+dias.splice(0,0,"lunes");
+console.log("Añadí en la pos 0 un elemento: " + dias);
+dias.splice(2,1,"miercoles");
+console.log("Eliminé y añadí un elem al mismo tiempo: " + dias);
