@@ -1,0 +1,55 @@
+// .encabezado{
+// 	display:flex;
+// }
+
+/*AGRAGAR ESTILOS CSS: */
+/* Crear variables: Patrón de colores*/
+$texto:yellow;
+$principal:rgb(0, 225, 255);
+$secundario:gray;
+
+body {
+	background: $principal;
+	color: $texto;
+	border: 5px solid $secundario;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ESTILOS DE PRUEBA*/
+.container{
+	border: 5px solid red;
+}
+.row {
+	border: 5px solid blue;
+}
+.row>{
+	border: 15px solid green;
+}
+
+html {
+	font-size:14px;
+}
+p{
+	font-size:1rem;
+}
+h1{
+	font-size:2rem;
+}
+
+@media(min-width:760px){
+	html{
+		font-size:30px;
+	}
+}
+
+/*Sobre escribiendo los colores primarios y secundarios*/
+.bg-secondary {
+	background-color: rgb(255, 127, 127)!important;
+  }
+.text-white {
+	--bs-text-opacity: 1;
+	color: bisque !important;
+  }
