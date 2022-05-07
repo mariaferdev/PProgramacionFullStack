@@ -57,4 +57,31 @@ h1 {
   --bs-text-opacity: 1;
   color: bisque !important;
 }
+
+.servicios > * {
+  border: 1px solid red;
+}
+
+.servicios {
+  /*display:flex;*/
+  height: 150px;
+}
+
+.probandoDisplay p {
+  height: 250px;
+  width: 250px;
+  display: inline;
+}
+
+.probandoDisplay a {
+  display: block;
+  height: 250px;
+  width: 250px;
+}
+
+p a {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+}
 /*# sourceMappingURL=7.estilos.css.map */

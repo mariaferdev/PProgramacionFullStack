@@ -92,24 +92,93 @@
     </h1>
     <h1 class="text-white bg-secondary">Aplicando clases de colores</h1>
     <!--===========MARGIN Y PADDING=============-->
-    <div class="bg-primary">Lorem ipsum dolor sit amet consectetur 
-      adipisicing elit. Expedita odit, qui veniam minus laudantium 
-      cumque voluptatum nulla ea tempore. Molestiae adipisci at 
-      consequatur doloremque, itaque quisquam recusandae eius vitae 
-      dolorem!</div>
-    <div class="bg-secondary">Lorem ipsum dolor sit amet consectetur 
-      adipisicing elit. Expedita odit, qui veniam minus laudantium 
-      cumque voluptatum nulla ea tempore. Molestiae adipisci at 
-      consequatur doloremque, itaque quisquam recusandae eius vitae 
-      dolorem!</div>
-    <div class="bg-success">Lorem ipsum dolor sit amet consectetur 
-      adipisicing elit. Expedita odit, qui veniam minus laudantium 
-      cumque voluptatum nulla ea tempore. Molestiae adipisci at 
-      consequatur doloremque, itaque quisquam recusandae eius vitae 
-      dolorem!</div>
+    <div class="bg-primary m-2 py-md-2 pt-lg-4">
+      Usando margenes: Para maquetar un sitio web siempre 
+     hay que crear espaciados internos y externos
+     se hace usando las propiedades css tanto margin 
+     (espaciado externo: determina la separación de un 
+     bloque con todos los elementos que lo rodean) como 
+     pading (espaciado interno: determina la separación 
+     de los extremos del bloque con el contenido)
+     m=margin, p=padding --> se pueden definir en contextos
+     </div>
+     <div class="bg-secondary my-md-4 p-2">
+      Usando margenes: Para maquetar un sitio web siempre 
+     hay que crear espaciados internos y externos
+     se hace usando las propiedades css tanto margin 
+     (espaciado externo: determina la separación de un 
+     bloque con todos los elementos que lo rodean) como 
+     pading (espaciado interno: determina la separación 
+     de los extremos del bloque con el contenido)
+     m=margin, p=padding --> se pueden definir en contextos
+     </div>
+     <div class="text-left bg-secondary mx-auto p-4 m-md-3" style="width:300px">
+      Usando margenes: Para maquetar un sitio web siempre 
+     hay que crear espaciados internos y externos
+     se hace usando las propiedades css tanto margin 
+     (espaciado externo: determina la separación de un 
+     bloque con todos los elementos que lo rodean) como 
+     pading (espaciado interno: determina la separación 
+     de los extremos del bloque con el contenido)
+     m=margin, p=padding --> se pueden definir en contextos
+     </div>
+    <!--TRABAJANDO CON FLEXBOX -->
+    <section class="servicios d-md-flex flex-md-column flex-xl-row
+                  justify-content-center justify-content-md-around
+                  align-items-center align-items-md-start">
+    <div class="item-1 flex-fill">Soy una columna1</div>
+    <div class="item-2 ......... order-1 order-md-2">Soy una columna2</div>
+    <div class="item-3 flex-fill">Soy una columna3</div>
+    <div class="item-4 flex-fill">Soy una columna4</div>
+    </section>
+    <section class="servicios d-md-flex justify-content-center
+                  align-items-center">
+      <div class="item-1 align-self-md-end">Soy una columna1</div>
+      <div class="item-2 aling-self-md-stretch">Soy una columna2</div>
+      <div class="item-3 align-self-md-stretch">Soy una columna3</div>
+      <div class="item-4 align-self-md-start">Soy una columna4</div>
+    </section>
+    <!--TRABAJAR BORDER Y SOMBRAS-->
+    <p class="m-4 p-3 border border-primary rounded shadow-lg">
+    Usando margenes: Para maquetar un sitio web siempre 
+    hay que crear espaciados internos y externos
+    se hace usando las propiedades css tanto margin 
+    (espaciado externo: determina la separación de un 
+    bloque con todos los elementos que lo rodean) como 
+    pading (espaciado interno: determina la separación 
+    de los extremos del bloque con el contenido)
+    m=margin, p=padding --> se pueden definir en contextos</p>
+    <!--TRABAJAR CON IMAGENES Y SOMBRAS-->
+    <div class="container">
+      <div class="row"> 
+        <div class="col-6 p-4"><img src="IMG/gato.jpg" 
+                    alt="gato" 
+                    class="img-fluid img-thumbnail shadow-lg"></div>
+        <div class="col-6"><img src="IMG/gato.jpg" 
+                    alt="gato" 
+                    class="img-fluid rounded-circle"></div>
+        </div>		
+      </div>
+    <!--TRABAJAR DISPLAY-->
+    <p class="m-5 p-4">
+    Usando margenes: Para maquetar un sitio web siempre 
+    hay que crear espaciados internos y externos
+    se hace usando las<a href="#" class="text-uppercase probandoDisplay">wachu wachu</a> 
+    m=margin, p=padding --> se pueden definir en contextos</p>
+    
+    <p class="m-5 p-4 d-none d-md-block">
+      Usando margenes: Para maquetar un sitio web siempre 
+      hay que crear espaciados internos y externos
+      se hace usando las m=margin, p=padding --> se pueden definir en contextos</p>
 
+    <section class=" fle-column justify-content-center align-items-center">
+      <div>
+        <a href="#" class="d-block d-md-inline">Wachu wachu</a> 
+        <a href="#" class="d-block d-md-inline">Wachu wachu</a>
+        <a href="#" class="d-block d-md-inline">wachu wachu 1</a>
+      </div>
+    </section>
   </div>
-
     <!--Archivos Bootstrap JavaScript -->
     <script src="JS/jquery-3.6.0.min.js"></script>
     <script src="JS/popper.min.js"></script>
