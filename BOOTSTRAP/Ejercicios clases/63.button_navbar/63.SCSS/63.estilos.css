@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*AGRAGAR ESTILOS CSS: */
+/* Crear variables: Patrón de colores*/
+body {
+  background: #e7a6d7;
+  color: #5f67d8;
+  border: 5px solid gray;
+}
+
+/*ESTILOS DE PRUEBA*/
+.container {
+  border: 5px solid red;
+}
+
+.row {
+  border: 5px solid blue;
+}
+
+.row > {
+  border: 15px solid green;
+}
+
+.collapse .show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+}

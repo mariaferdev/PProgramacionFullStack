@@ -4,8 +4,8 @@
 
 /*AGRAGAR ESTILOS CSS: */
 /* Crear variables: Patrón de colores*/
-$texto:yellow;
-$principal:rgb(0, 225, 255);
+$texto:rgb(95, 103, 216);
+$principal:rgb(231, 166, 215);
 $secundario:gray;
 
 body {
@@ -58,7 +58,6 @@ h1{
 }
 
 .servicios{
-	/*display:flex;*/
 	height:150px;
 }
 .probandoDisplay p{

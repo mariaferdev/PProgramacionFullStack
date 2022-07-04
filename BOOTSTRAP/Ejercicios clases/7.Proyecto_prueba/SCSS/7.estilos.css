@@ -2,8 +2,8 @@
 /*AGRAGAR ESTILOS CSS: */
 /* Crear variables: Patrón de colores*/
 body {
-  background: #00e1ff;
-  color: yellow;
+  background: #e7a6d7;
+  color: #5f67d8;
   border: 5px solid gray;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,7 +63,6 @@ h1 {
 }
 
 .servicios {
-  /*display:flex;*/
   height: 150px;
 }
 

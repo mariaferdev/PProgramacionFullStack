@@ -67,8 +67,9 @@
             <div class="col-10 order-md-0 order-lx-1">Col 3.2</div>
           </div>
         </div>
-
       </div>
+
+    </div>
     <!--===========CLASES PARA TAMAÑO,COLOR, POSICIÓN Y DEMÁS TIPOGRAFÍA DE TEXTO=============-->
     <p>wachu wachu soy un parrafo normal</p>
 	  <h1>Hello ok</h1>
@@ -91,6 +92,7 @@
       <span class="small">texto 80por menor</span>
     </h1>
     <h1 class="text-white bg-secondary">Aplicando clases de colores</h1>
+
     <!--===========MARGIN Y PADDING=============-->
     <div class="bg-primary m-2 py-md-2 pt-lg-4">
       Usando margenes: Para maquetar un sitio web siempre 
@@ -122,7 +124,8 @@
      de los extremos del bloque con el contenido)
      m=margin, p=padding --> se pueden definir en contextos
      </div>
-    <!--TRABAJANDO CON FLEXBOX -->
+
+    <!--===========TRABAJANDO CON FLEXBOX====================-->
     <section class="servicios d-md-flex flex-md-column flex-xl-row
                   justify-content-center justify-content-md-around
                   align-items-center align-items-md-start">
@@ -138,7 +141,8 @@
       <div class="item-3 align-self-md-stretch">Soy una columna3</div>
       <div class="item-4 align-self-md-start">Soy una columna4</div>
     </section>
-    <!--TRABAJAR BORDER Y SOMBRAS-->
+
+    <!--=========TRABAJAR BORDER Y SOMBRAS===============-->
     <p class="m-4 p-3 border border-primary rounded shadow-lg">
     Usando margenes: Para maquetar un sitio web siempre 
     hay que crear espaciados internos y externos
@@ -148,7 +152,8 @@
     pading (espaciado interno: determina la separación 
     de los extremos del bloque con el contenido)
     m=margin, p=padding --> se pueden definir en contextos</p>
-    <!--TRABAJAR CON IMAGENES Y SOMBRAS-->
+
+    <!--==========TRABAJAR CON IMAGENES Y SOMBRAS==============-->
     <div class="container">
       <div class="row"> 
         <div class="col-6 p-4"><img src="IMG/gato.jpg" 
@@ -158,8 +163,9 @@
                     alt="gato" 
                     class="img-fluid rounded-circle"></div>
         </div>		
-      </div>
-    <!--TRABAJAR DISPLAY-->
+    </div>
+
+    <!--==========TRABAJAR DISPLAY==============-->
     <p class="m-5 p-4">
     Usando margenes: Para maquetar un sitio web siempre 
     hay que crear espaciados internos y externos
@@ -171,14 +177,89 @@
       hay que crear espaciados internos y externos
       se hace usando las m=margin, p=padding --> se pueden definir en contextos</p>
 
-    <section class=" fle-column justify-content-center align-items-center">
+    <section>
       <div>
-        <a href="#" class="d-block d-md-inline">Wachu wachu</a> 
-        <a href="#" class="d-block d-md-inline">Wachu wachu</a>
-        <a href="#" class="d-block d-md-inline">wachu wachu 1</a>
+        <a href="#" class="d-block">Wachu wachu</a> 
+        <a href="#" class="d-block">Wachu wachu</a>
+        <a href="#" class="d-block">wachu wachu 1</a>
       </div>
     </section>
-  </div>
+
+    <!-- =====COMPONENTES: BUTTON OUTLINE-BUTTONS========== -->
+    <input type="submit" value="input" class="btn btn-primary">
+    <button type="button" class="btn btn-primary">Button</button>
+    <a href="#" class="btn btn-primary">ENlace</a>
+
+    <section class="container">
+      <div class="row p-4">
+        <article class="col">
+            <div class="border rounded p-4 shadow-sm">
+              <h2>Titulo</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur 
+                adipisicing elit. Doloribus enim, deleniti 
+                uidem nam fuga, exercitationem excepturi r
+                ecusandae perspiciatis quae eius fugit cupid
+                itate suscipit odit beatae rerum laboriosam mi
+                nima magnam.</p>
+                <a class="mb-2 btn btn-info btn-lg"> Ver información</a>
+                <button type="button" class="btn btn-info btn-lg btn-block"> Ver información</button>
+            </div>
+        </article>
+
+        <article class="col mt-3 m-lg-0">
+          <div class="border rounded p-4 shadow-sm">
+            <h2>Titulo</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur 
+              adipisicing elit. Doloribus enim, deleniti 
+              uidem nam fuga, exercitationem excepturi r
+              ecusandae perspiciatis quae eius fugit cupid
+              itate suscipit odit beatae rerum laboriosam mi
+              nima magnam.</p>
+              <a class="mb-2 btn btn-info btn-lg"> Ver información</a>
+              <button type="button" class="btn btn-outline-primary btn-lg"> Ver información</button>
+          </div>
+      </article>
+      </div>
+
+    </section>
+
+    <!-- ======= COMPONENTE COLLAPSE ================ -->
+    <div class="container">
+      <div class="row p-4 justify-content-center">
+        <article class="col-sm-8">
+          <div class="border rounded p-4 shadow-sm text-center">
+            <h2>Marchando</h2>
+            <p>Porque no hay arma que sea más fuerte Que el amor 
+              que levanta del piso Construye puentes, cruza fronteras El inmigrante, 
+              el refugiado Y el nativo que fue desplazado Por eso no cayo, no retrocedo 
+              Y si me detengo es solo una pausa Para retomar la fuerza Pa' recuperar el 
+              aliento Para extender mi plegaria Y encender la vela que se apaga Porque su 
+              luz nos mantiene Cantando, luchando, bailando En esta penumbra Mientras esperamos el alba</p>
+              <button type="submit" class="btn btn-info" data-toggle="collapse" 
+              data-target="#pasos" aria-expanded="true" aria-controls="pasos">Show more</button>
+
+              <div class="collapse Show" id="pasos">
+                <div class="my-3 p-3 rounded bg-secondary text-white-text-left">
+                  <h3>Pasos</h3>
+                  <ol>
+                    <li>wuachu</li>
+                    <li>wauchu wuachu</li>
+                    <li>wuachu wuachu wuachu</li>
+                  </ol>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor hic aut ea sit 
+                    quae voluptates debitis explicabo, veniam perferendis beatae odio culpa a delectus 
+                    ducimus minus fugiat exercitationem eveniet.</p>
+                    <p class="text-center">
+                      <a href="#" class="btn btn-primary" data-toggle="collapse" 
+                      data-target="#pasos" aria-expanded="true">cerrar</a></p>
+                </div>
+              </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <!-- COMPONENTE NAVBAR: -->
+    
     <!--Archivos Bootstrap JavaScript -->
     <script src="JS/jquery-3.6.0.min.js"></script>
     <script src="JS/popper.min.js"></script>

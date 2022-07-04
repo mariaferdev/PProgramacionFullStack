@@ -1,0 +1,29 @@
+/*AGRAGAR ESTILOS CSS: */
+/* Crear variables: Patrón de colores*/
+$texto:rgb(95, 103, 216);
+$principal:rgb(231, 166, 215);
+$secundario:gray;
+
+body {
+	background: $principal;
+	color: $texto;
+	border: 5px solid $secundario;
+}
+
+/*ESTILOS DE PRUEBA*/
+.container{
+	border: 5px solid red;
+}
+.row {
+	border: 5px solid blue;
+}
+.row>{
+	border: 15px solid green;
+}
+.collapse .show {
+	display:flex;
+  }
+
+ul li{
+	list-style: none;
+}
