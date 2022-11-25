@@ -1,0 +1,44 @@
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+}
+html, body {
+    width:100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-items: flex-end;
+    align-items: flex-start; */
+}
+.contenedor {
+    width: 500px;
+    background-color: khaki;
+    padding: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenido {
+    width: 70%;
+    background-color: lightblue;
+    min-height: 500px;
+    border: 1px solid lightseagreen;
+    flex-grow: 1;
+}
+.lateral {
+    background-color: lightsteelblue;
+    width: 25%;
+    min-height: 500px;
+    flex-grow: 0.5;
+    margin-left: 20px;
+}
+h1 {
+    flex-basis: 100%;
+}

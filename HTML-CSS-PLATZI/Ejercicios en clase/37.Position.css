@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+.contenido{
+    background-color: cadetblue;
+    width: 80%;
+    height: 500px;
+    border: crimson;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.titulo{
+    background-color: coral;
+    width: 30%;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+    bottom: -10px;
+}
+.contenido p{
+    margin:0;
+    text-align: center;
+    padding: 15px;
+}
+.titulo h1{
+    margin:0;
+    text-align: center;
+    padding: 5px;
+}

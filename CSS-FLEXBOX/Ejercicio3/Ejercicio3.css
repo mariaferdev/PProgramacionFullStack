@@ -1,0 +1,171 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: rgb(0, 130, 139);
+    display: flex;
+    align-items:flex-start;
+    justify-content:center; 
+}
+.contenedorDeCentro{
+    display: flex;
+    width: 800px;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 3;
+}
+
+ul.contenedorMenu{
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(36, 106, 163);
+    font-family: sans-serif;
+    display: flex;  
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;   
+    justify-content: space-around;
+}
+.menu a {
+    list-style: none;
+    text-decoration: none;
+    color: honeydew;
+    padding: 10px;
+}
+.redes img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+}
+.ImgPrincipal{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    width: 90%; 
+    height: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: red;
+    background-image: url(https://placeimg.com/500/500/nature);
+    background-position: center;
+    background-size: cover;
+}
+
+.texto {
+    width: 90%;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: rgb(36, 106, 163);
+    font-family: sans-serif;
+    display: flex;  
+    justify-content: center;
+}
+#contacto {
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(36, 106, 163);
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+#contacto form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+input{
+    display: flex;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+.piePagina{
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(36, 106, 163);
+    font-family: sans-serif;
+    display: flex;  
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+#menuDespliegue {
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 106, 163);
+    display: none;
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px;
+}
+#menuDespliegue a {
+    text-decoration: none;
+    color: honeydew;
+    font-family: sans-serif;
+}
+
+@media (max-width:768px) {
+    .menu {
+        flex-basis: 33%;
+    }
+    ul.contenedorMenu {
+        flex-wrap: wrap;
+        display: none;
+    }
+    li:nth-child(4){
+        flex-basis: 50%;
+    }
+    li:nth-child(5){
+        flex-basis: 50%;
+    }
+    .contenedorMenu {
+        order: -2;
+    }
+    #contacto{
+        order: -1;
+    }
+    input {
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+    #menuDespliegue {
+        display: flex;
+        order: -3;
+    }
+}
+@media (max-width:375px){
+    .menu {
+        flex-basis: 100%;
+    }
+    li:nth-child(4){
+        flex-basis: 100%;
+    }
+    li:nth-child(5){
+        flex-basis: 100%;
+    }
+}
